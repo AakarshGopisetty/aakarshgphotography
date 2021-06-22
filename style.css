@@ -23,18 +23,10 @@ hr {
   max-height: 100%;
   z-index: 2;
   position: relative;
+  top: 1rem;
 }
 
-.logo {
-  display: block;
-  padding: 0;
-  padding-bottom: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1rem;
-  max-width: 32.5%;
-  height: auto;
-}
+
 
 .navbar-links {
   display: flex;
@@ -79,7 +71,7 @@ li:hover hr{
 /* Position of expand button */
 .toggle-button {
   position: absolute;
-  top: auto;
+  top: 1rem;
   right: 1rem;
   display: none;
   flex-direction: column;
@@ -253,7 +245,7 @@ h3 {
   -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */
 }
 .slide:nth-child(3) {
-  background: url('Barn15.jpg') no-repeat
+  background: url('Squirrel.jpg') no-repeat
   center top/cover;
   image-rendering: crisp-edges;
   image-rendering: -moz-crisp-edges;          /* Firefox */
@@ -281,6 +273,15 @@ h3 {
 }
 .slide:nth-child(6)  {
   background: url('Barn Swallows.jpg') no-repeat
+  center center/cover;
+  image-rendering: crisp-edges;
+  image-rendering: -moz-crisp-edges;          /* Firefox */
+  image-rendering: -o-crisp-edges;            /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
+  -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */
+}
+.slide:nth-child(7)  {
+  background: url('Hummingbird.jpg') no-repeat
   center center/cover;
   image-rendering: crisp-edges;
   image-rendering: -moz-crisp-edges;          /* Firefox */
