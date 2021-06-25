@@ -290,8 +290,8 @@ h3 {
   -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */
 }
 
-.column1 {
-  background-color: #fefefe;
+.row {
+  background-color: #18181a;
 
 }
 
@@ -303,5 +303,23 @@ h3 {
 }
 
 .column1 p {
-  color: red;
+  color: #fefefe;
+  text-align: center;
+  font-family: 'Nanum Myeongjo', serif;
 }
+
+.footer {
+  width: 100vw;
+  display: block;
+  overflow: hidden;
+  padding: 70px 0;
+  box-sizing: border-box;
+  background-color: #181818;
+}
+.innerfooter {
+  display: block;
+  margin: 0 auto;
+  width: 1100px;
+  height: 100%;
+}
+.innerfooter .logo_container
