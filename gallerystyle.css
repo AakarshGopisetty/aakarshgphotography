@@ -138,9 +138,6 @@
 }
 .thirteen {
 	grid-column: span 100;
-  image-rendering: -moz-crisp-edges;          /* Firefox */
-  image-rendering: -o-crisp-edges;            /* Opera */
-  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
 }
 .fourteen {
 	grid-column: span 50;
@@ -158,9 +155,4 @@
 }
 .seventeen {
 	grid-column: span 100;
-
-  image-rendering: -moz-crisp-edges;          /* Firefox */
-  image-rendering: -o-crisp-edges;            /* Opera */
-
-  -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */
 }
