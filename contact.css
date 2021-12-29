@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* Body */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.all
+{
+  background-image: url('bison2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Navbar */
+hr {
+  margin-top: 0.5rem !important;
+  margin-bottom: 1rem !important;
+  border-color: #d9d9d9 !important;
+}
+.navbar {
+  background-color: none;
+  max-height: 100%;
+  z-index: 2;
+  position: relative;
+  top: 1rem;
+}
+.footer1 {
+  background-color: none;
+  max-height: 100%;
+  z-index: 2;
+  position: relative;
+  bottom: 5rem;
+}
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.navbar-links ul {
+  display: flex 	;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 75%;
+  max-width: 75%;
+}
+.navbar-links li {
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: #fefefe !important;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 150%;
+}
+/* Change color of line when hovering on navbar links */
+li:hover hr{
+  border-color: #ffffff !important;
+  height: 10px;
+}
+/* Change color of navbar links when hovering */
+.navbar-links li:hover {
+  color: #555;
+}
+/* Position of expand button */
+.toggle-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+/* Properties of expand button */
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: grey;
+  border-radius: 10px;
+}
+/* Navbar changes for smaller screen */
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo1 {
+    display: flex;
+    align-items: center;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+/* Contact Form */
+.contact
+{
+  position: relative;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+}
+.contact .content
+{
+  max-width: 800px;
+  text-align: center;
+}
+.contact .content h2
+{
+  font-size: 36px;
+  font-weight: 500;
+  color: #fff;
+}
+.contact .content p
+{
+  font-weight: 300;
+  color: #fff;
+}
+.container1
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.container1 .contactInfo
+{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.container1 .contactInfo .box
+{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.container1 .contactInfo .box .icon
+{
+  min-width: 60px;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+  margin: 30px;
+}
+.iconify
+{
+  font-size: 150%;
+}
+.container1 .contactInfo .box .tent
+{
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+}
+.container1 .contactInfo .box .tent h3
+{
+  font-weight: 500;
+  color: #00bcd4;
+}
+.contactForm
+{
+  width: 40%;
+  padding: 40px;
+  background: #fff;
+}
+.contactForm .inputBox
+{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contactForm .inputBox input
+{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+.contactForm .inputBox span
+{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-15px);
+}
+.contactForm .inputBox input[type="submit"]
+{
+  width: 100px;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+@media (max-width: 991px)
+{
+  .contact
+  {
+      padding: 50px;
+  }
+  .container1
+  {
+    flex-direction: column;
+  }
+  .container1 .contactInfo
+  {
+    margin-bottom: 40px;
+  }
+  .container1 .contactInfo,
+  .contactForm
+  {
+    width: 100%;
+  }
+}
